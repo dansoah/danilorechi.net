@@ -1,91 +1,43 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import logo from './assets/images/logo.svg';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      <header className={styles.main_heading}>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <Image className={styles.main_logo} src={logo} alt="Danilo Rechi's logo, composed by a D with an R inside of it"/>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
+        <ul id={styles.language_selector}>
+          <li> <a href="/en" className={styles.language_item}> English </a></li>
+          <li> <a href="/pt" className={styles.language_item}> Português </a></li>
+        </ul>
+          
+      </header>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section id="hello">
+        <h1 id={styles.greeting}>Hi! I'm <span className={styles.highlight}>Danilo Rechi</span>,</h1>
+        <h2 id={styles.what_i_do}>and I solve problems using computers.</h2>
+      </section>
+
+      <section id="social">
+        <ul id={styles.socialmedia_list}>
+          <li className={styles.socialmedia_item}>
+            <a href="https://www.linkedin.com/in/danilo-rechi/">Linkedin</a>
+          </li>
+          <li className={styles.socialmedia_item}>
+            <a href="https://github.com/dansoah"> Github </a>
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        90's style
+      </footer>
+
     </main>
   )
 }
