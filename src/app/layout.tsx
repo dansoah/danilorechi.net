@@ -1,7 +1,7 @@
 import './globals.css'
 export const metadata = {
-  title: 'Danilo Rechi - Eu faço coisas com computadores ',
-  description: 'Danilo Rechi - Engenheiro de computação, arquiteto de soluções, desenvolvedor e mestre churrasqueiro',
+  title: 'Danilo Rechi - I solve problems using computers ',
+  description: 'Danilo Rechi - Computer engineer, solutions architect, developer & barbecue master',
 }
 
 export default function RootLayout({
