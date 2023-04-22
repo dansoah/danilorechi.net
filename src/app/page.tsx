@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import logo from './assets/images/logo.svg';
+import githubLogo from './assets/images/github.svg';
+import linkedinLogo from './assets/images/linkedin.svg';
 
 
 export default function Home() {
@@ -23,13 +25,17 @@ export default function Home() {
         <h2 id={styles.what_i_do}>and I solve problems using computers.</h2>
       </section>
 
-      <section id="social">
+      <section id={styles.social_section} >
         <ul id={styles.socialmedia_list}>
           <li className={styles.socialmedia_item}>
-            <a href="https://www.linkedin.com/in/danilo-rechi/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/danilo-rechi/">
+              <Image src={linkedinLogo} className={styles.socialmedia_logo}/>
+            </a>
           </li>
           <li className={styles.socialmedia_item}>
-            <a href="https://github.com/dansoah"> Github </a>
+            <a href="https://github.com/dansoah"> 
+              <Image src={githubLogo} className={styles.socialmedia_logo} />
+            </a>
           </li>
         </ul>
       </section>
