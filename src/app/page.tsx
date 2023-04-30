@@ -21,7 +21,7 @@ export default function Home() {
       </header>
 
       <section id="hello">
-        <h1 id={styles.greeting}>Hi! I'm <span className={styles.highlight}>Danilo Rechi</span>,</h1>
+        <h1 id={styles.greeting}>Hi! I&apos;m <span className={styles.highlight}>Danilo Rechi</span>,</h1>
         <h2 id={styles.what_i_do}>and I solve problems using computers.</h2>
       </section>
 
@@ -41,7 +41,7 @@ export default function Home() {
       </section>
 
       <footer>
-        90's style
+        90&apos;s style
       </footer>
 
     </main>
