@@ -1,0 +1,69 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#greeting {
+  font-size: 65pt;
+}
+
+#what_i_do {
+  font-family: 'Space Mono';
+  font-size: 20pt;
+}
+
+#social_section {
+  padding-bottom: 100px;
+}
+
+.highlight {
+  color: #facb00
+}
+
+.main_heading {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100vw;
+}
+
+.main_logo {
+  align-self: flex-start;
+
+  width: 50px;
+  height: 50px;
+
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#language_selector {
+  align-self: flex-end;
+
+  list-style: none;
+}
+
+.language_item {
+  display: inline-block;
+}
+
+#socialmedia_list {
+  list-style: none;
+
+}
+
+.socialmedia_item {
+  display: inline-block;
+}
+
+.socialmedia_item:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+.socialmedia_logo {
+  width: 50px;
+  height: 50px;
+  color: #FFF;
+}
