@@ -4,15 +4,13 @@ import logo from './assets/images/logo.svg';
 import githubLogo from './assets/images/github.svg';
 import linkedinLogo from './assets/images/linkedin.svg';
 
+import SiteHeader from '@/components/SiteHeader';
+
 export default function Home() {
   return (
     <main className={styles.main}>
 
-      <header className={styles.main_heading}>
-
-        <Image className={styles.main_logo} src={logo} alt="Danilo Rechi's logo, composed by a D with an R inside of it" />
-
-      </header>
+      <SiteHeader />
 
       <section id="hello">
         <h1 id={styles.greeting}>Hi! I&apos;m <span className={styles.highlight}>Danilo Rechi</span>,</h1>
