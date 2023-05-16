@@ -1,14 +1,21 @@
 import { GetStaticPaths } from 'next'
+import styles from '@/styles/Post.module.css';
+import SiteHeader from '@/components/SiteHeader';
 import { getAllPostsWithSlug, getPost } from '../../lib/wordpress';
 
 export default function Blog({ post }) {
 
     return (
-        <article>
-            <h1> {post.title} </h1>
-            <div> {post.date }</div>
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
-        </article>
+        <main className={styles.main}>
+            <SiteHeader />
+        
+            <article className={styles.article}>
+                <h1> {post.title} </h1>
+                <div> {post.date }</div>
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            </article>
+
+        </main>
     )
 }
 
