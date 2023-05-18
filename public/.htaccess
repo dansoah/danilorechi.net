@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^blog$ blog.html [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^posts(/.*)?$ posts/$1.html [NC]
