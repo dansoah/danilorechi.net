@@ -4,7 +4,7 @@ import logo from './assets/images/logo.svg';
 import githubLogo from './assets/images/github.svg';
 import linkedinLogo from './assets/images/linkedin.svg';
 
-import SiteHeader from '@/components/SiteHeader';
+import { SiteHeader } from '@/components/SiteHeader';
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import { GetStaticPaths } from 'next'
 import styles from '@/styles/Post.module.css';
-import SiteHeader from '@/components/SiteHeader';
+import { SiteHeader } from '@/components/SiteHeader';
 import { getAllPostsWithSlug, getPost } from '../../lib/wordpress';
 
 export default function Blog({ post }) {
