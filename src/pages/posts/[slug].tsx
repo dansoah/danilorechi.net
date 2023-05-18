@@ -1,4 +1,4 @@
-import { GetStaticPaths } from 'next'
+import { GetStaticPaths, GetStaticProps } from 'next'
 import styles from '@/styles/Post.module.css';
 import { SiteHeader } from '@/components/SiteHeader';
 import { getAllPostsWithSlug, getPost } from '../../lib/wordpress';
