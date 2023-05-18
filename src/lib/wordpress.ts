@@ -84,7 +84,7 @@ export async function getBlogHomePosts(preview: Boolean) {
     return fetchResults?.posts
 }
 
-export async function getPost(slug, preview, previewData) {
+export async function getPost(slug: any, preview: any, previewData: any) {
     const postPreview = preview && previewData?.post
     // The slug may be the id of an unpublished post
     const isId = Number.isInteger(Number(slug))
